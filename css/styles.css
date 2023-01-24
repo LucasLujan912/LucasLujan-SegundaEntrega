@@ -1,0 +1,634 @@
+
+/*PAGINA NUEVA CON GRID*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; 
+}
+
+.navbar{
+    background: linear-gradient(#f899b2, #ffdde6 );
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}   
+
+.navbar .logo {
+    width: 100px;
+    height: 100px;
+    grid-column: 2/3;
+}
+
+.navbar .hola{
+    display: grid;
+    align-items: center;
+}
+.navbartortas .hola{
+    display: grid;
+    align-items: center;
+}
+.navbarnuestra .hola{
+    display: grid;
+    align-items: center;
+}
+.navbarnosotras .hola{
+    display: grid;
+    align-items: center;
+}
+.navbarcontacto .hola{
+    display: grid;
+    align-items: center;
+}
+
+.navbar .menu {
+    grid-column: 4/7 ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbar .menu li {
+ list-style: none;
+ font-size: 15px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.navbar .menu__bar {
+    
+    grid-column: 8/9;
+    display: none;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; 
+}
+
+/*NAVEGACION NUESTRA COCINA*/
+
+ .navbarnuestra{
+    background: linear-gradient(#81e09e, #9ae6b1 );
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}   
+
+.navbarnuestra .logo {  
+    width: 100px;
+    height: 100px;
+    grid-column: 2/3;
+}
+
+.navbarnuestra .menu {
+    grid-column: 4/7 ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbarnuestra .menu li {
+ list-style: none;
+ font-size: 15px;
+}
+
+.navbarnuestra .menu a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.navbarnuestra .menu__barnuestra {
+    
+    grid-column: 8/9;
+    display: none;
+
+}
+
+/*NAVEGACION NOSOTRAS*/
+
+.navbarnosotras{
+    background: linear-gradient(#abc5fe, #bed2fe );
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}   
+
+.navbarnosotras .logo {  
+    width: 100px;
+    height: 100px;
+    grid-column: 2/3;
+}
+
+.navbarnosotras .menu {
+    grid-column: 4/7 ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbarnosotras .menu li {
+ list-style: none;
+ font-size: 15px;
+}
+
+.navbarnosotras .menu a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.navbarnosotras .menu__barnosotras {
+    
+    grid-column: 8/9;
+    display: none;
+}
+
+/* PAGINA PRINCIPAL*/
+
+.principal{
+    height: 100vh;
+    background: linear-gradient(#ffdde6, #ffd6e1);
+    max-width: 100%;
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr); 
+}
+
+/*PRINCIPAL NUESTRA COCINA*/
+.principalnuestra{
+    height: 100vh;
+    background: linear-gradient(#9ae6b1, #b3ecc5);
+    max-width: 100%;
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr); 
+}
+
+/*PRINCIPAL NOSOTRAS*/
+
+.principalnosotras{
+    height: 100vh;
+    background: linear-gradient(#bed2fe, #c7d9fe);
+    max-width: 100%;
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr); 
+}
+
+.principal .video{
+    grid-column: 6/9;
+    grid-row: 3/4;
+}
+.principalnuestra .fotonuestra{
+    grid-column: 6/9;
+    grid-row: 3/4;
+}
+
+.principalnosotras .fotonosotras {
+    grid-column: 6/9;
+    grid-row: 3/4;
+}
+
+.principal .foto{
+    grid-row: 3/4;
+    grid-column: 9/11;
+}
+
+.principal .foto2{
+    grid-row: 3/4;
+    grid-column: 9/11;
+    align-self: end;
+}
+
+.principal .video .messi{
+    border: 1px solid black;
+  
+}
+
+.principal .mensaje{
+    grid-column: 2/5;
+    grid-row: 3/4;
+    align-self: center;
+}
+.principalnuestra .mensajenuestra{
+    grid-column: 2/5;
+    grid-row: 3/4;
+    align-self: center;
+}
+
+.principalnosotras .mensajenosotras {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    align-self: center;
+
+}
+
+.principal .mensaje h1{
+    font-size: 6rem;
+
+}
+
+.principal.mensaje h2{
+    font-size: 50rem;
+}
+
+/* PIE DE PAGINA */
+
+.footer {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background: linear-gradient(#ffd6e1, #f899b2);
+    color: black;
+    grid-template-areas: 
+    "catalogo contactanos redes";
+ }
+
+.footer .catalogo{
+    grid-template-areas: catalogo;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .contactanos{
+    grid-template-areas: contactanos;
+    text-align: center;
+  
+}
+.footer .redes {
+    grid-template-areas: redes;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer .redes .fa-brands{
+    margin-right: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* footer NUESTRA COCINA*/
+
+.footernuestra {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background: linear-gradient(#b3ecc5, #81e09e);
+    color: black;
+    grid-template-areas: 
+    "catalogo contactanos redes";
+ }
+
+ .footernuestra .catalogo {
+    grid-template-areas: catalogo;
+    display: flex;
+    justify-content: center;
+}
+
+.footernuestra .contactanos{
+    grid-template-areas: contactanos;
+    text-align: center;
+  
+}
+.footernuestra .redes {
+    grid-template-areas: redes;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footernuestra .redes .fa-brands{
+    margin-right: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/*NOSOTRAS*/
+
+.footernosotras {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background: linear-gradient(#c7d9fe, #abc5fe);
+    color: black;
+    grid-template-areas: 
+    "catalogo contactanos redes";
+ }
+
+ .footernosotras .catalogo {
+    grid-template-areas: catalogo;
+    display: flex;
+    justify-content: center;
+}
+
+.footernosotras .contactanos{
+    grid-template-areas: contactanos;
+    text-align: center;
+  
+}
+.footernosotras .redes {
+    grid-template-areas: redes;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footernosotras .redes .fa-brands{
+    margin-right: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/*NAVEGACION TORTAS*/
+.navbartortas{
+    background: linear-gradient(#fffe7f, #fffe8d );
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}   
+
+.navbartortas .logo {  
+    width: 100px;
+    height: 100px;
+    grid-column: 2/3;
+}
+
+.navbartortas .menu {
+    grid-column: 4/7 ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbartortas .menu li {
+ list-style: none;
+ font-size: 15px;
+}
+
+.navbartortas .menu a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.navbartortas .menu__bartortas {
+    
+    grid-column: 8/9;
+    display: none;
+}
+
+
+
+/*PRINCIPAL TORTAS*/
+.principaltortas{
+    height: 100vh;
+    background: linear-gradient(#fffe8d, #fffe9c);
+    max-width: 100%;
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr); 
+}
+
+.principaltortas .trabajo2{
+    grid-column: 6/9;
+    grid-row: 3/4;
+}
+
+.principaltortas .trabajo1{
+    grid-column: 2/5;
+    grid-row: 3/4;
+    align-self: center;
+}
+
+/*FOOTER TORTAS*/
+.footertortas {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background: linear-gradient(#fffe9c, #fffe7f);
+    color: black;
+    grid-template-areas: 
+    "catalogo contactanos redes";
+ }
+
+ .footertortas .catalogo {
+    grid-template-areas: catalogo;
+    display: flex;
+    justify-content: center;
+}
+
+.footertortas .contactanos{
+    grid-template-areas: contactanos;
+    text-align: center;
+  
+}
+.footertortas .redes {
+    grid-template-areas: redes;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footertortas .redes .fa-brands{
+    margin-right: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/*NAVEGACION CONTACTO*/
+.navbarcontacto{
+    background: linear-gradient(#df6967, #e27978 );
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}   
+
+.navbarcontacto .logo {  
+    width: 100px;
+    height: 100px;
+    grid-column: 2/3;
+}
+
+.navbarcontacto .menu {
+    grid-column: 4/7 ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbarcontacto .menu li {
+ list-style: none;
+ font-size: 15px;
+}
+
+.navbarcontacto .menu a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.navbarcontacto .menu__barcontacto {
+    
+    grid-column: 8/9;
+    display: none;
+}
+
+/*FOOTER CONTACTO*/
+.footercontacto {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background: linear-gradient(#e99b8a, #df6967);
+    color: black;
+    grid-template-areas: 
+    "catalogo contactanos redes";
+ }
+
+ .footercontacto .catalogo {
+    grid-template-areas: catalogo;
+    display: flex;
+    justify-content: center;
+}
+
+.footercontacto .contactanos{
+    grid-template-areas: contactanos;
+    text-align: center;
+  
+}
+.footercontacto .redes {
+    grid-template-areas: redes;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footercontacto .redes .fa-brands{
+    margin-right: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/*MEDIA*/
+
+@media only screen and (max-width: 500px) {
+
+
+    .navbar{
+        position: relative;
+    }
+    .navbar .menu__bar{
+        display: block;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .navbar .menu {
+      position: absolute;
+      width: 100%;
+      height: 70vh;
+      display: grid;
+      align-items: center;
+      background-color: #ffe3eb;
+      margin-top: 30rem;
+      transform: translateX(170%);
+      transition: all 1s;
+    }
+    
+    .navbar .menu__toggle{
+        transform: translateX(70%);
+    }
+    
+    .principal .foto {
+        display: none;
+    }
+    
+    .principal .foto2{
+        display: none;
+    }
+
+    .principal .video .messi{
+        width: 180px;
+        align-items:stretch;
+    }
+    
+    .principal .mensaje h1{
+        font-size: 30px;
+    }
+
+    .navbarnosotras{
+        position: relative;
+    }
+    .navbarnosotras .menu__barnosotras{
+        display: block;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .navbarnosotras .menu {
+      position: absolute;
+      width: 100%;
+      height: 70vh;
+      display: grid;
+      align-items: center;
+      background-color: #ffe3eb;
+      margin-top: 30rem;
+      transform: translateX(170%);
+      transition: all 1s;
+    }
+    
+    .navbarnosotras .menu__toggle{
+        transform: translateX(70%);
+    }
+    
+
+    .principalnosotoras .fotonosotras{
+        width: 180px;
+        align-items:stretch;
+    }
+    
+    .principalnosotras .mensajenosotras h1{
+        font-size: 30px;
+    }
+
+    /* SECTION FOOTER*/
+    
+    .footer .contactanos {
+        display: none;
+    }
+    
+    .footer .redes {
+        text-align: center;
+    }
+    
+    .footernosotras .contactanos {
+        display: none;
+    }
+    
+    .footernosotras .redes {
+        text-align: center;
+    }
+    
+    
+    }
